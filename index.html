@@ -107,6 +107,21 @@
     </div>
 
     <!--JavaScript Codes-->
-    <script></script>
+    <script>
+      //Create a time date fuction
+      function currentTime() {
+        // Declare variables
+        var d = new Date(); // Get current date
+        var hr = d.getHours(); // Get current hours
+        var min = d.getMinutes(); // Get current minutes
+        var sec = d.getSeconds(); // Get current seconds
+        var ampm; // Declare empty variable to store AM or PM
+
+        // Add 0 to single digits for seconds
+        if (sec < 10) {
+          sec = "0" + sec;
+        }
+      }
+    </script>
   </body>
 </html>
