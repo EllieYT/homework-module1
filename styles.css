@@ -190,6 +190,17 @@ td:first-child {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* Cliffs Layout Adjust w2d3*/
+.main-cliffs {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* Activities Layout Adjust*/
 .main-activities {
   width: 85%;
@@ -293,4 +304,37 @@ form .commentbox label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+}
+
+/*w2d3*/
+.cliffs-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.cliff-item {
+  text-align: center;
+  padding: 12px;
+  background-color: #f9f9f9;
+}
+
+.cliff-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.cliff-item h3 {
+  margin-top: 10px;
+  margin: 0;
+  font-size: 1.2em;
+  color: white;
+  background-color: #852b1b;
+  padding: 10px 0;
+  display: block;
 }
