@@ -173,7 +173,7 @@ td {
 th:first-child {
   width: 125px;
   height: 50px;
-  background: #4977d1;
+  background: #b72146;
   color: #fff;
 }
 td:first-child {
@@ -257,7 +257,7 @@ textarea {
   border: 1px solid #000000;
 }
 .button input[type="submit"] {
-  background-color: #4977d1;
+  /*background-color: #4977d1;*/ /*error*/
   color: #fff;
   border: none;
   cursor: pointer;
@@ -291,7 +291,7 @@ form textarea {
 form input[type="submit"] {
   width: 150px;
   padding: 10px;
-  background-color: #4977d1;
+  /*background-color: #4977d1;*/ /*error*/
   color: white;
   border: none;
   cursor: pointer;
