@@ -1,6 +1,6 @@
 /* ------- RANDOM CODES ------- */
 
-// Function to generate combination of characters
+/* ----- // Function to generate combination of characters
 function generateCode() {
   // Create variables to store generated codes and the type of characters we want to show as codes
 
@@ -21,7 +21,7 @@ function disableButton() {
 }
 
 // Activate function
-disableButton();
+disableButton(); ------ */
 
 //NOTE: submit button is initially disabled upon loading of this page - see <body> in html
 var code = " "; // to store generated codes and initialize to empty value
@@ -49,7 +49,15 @@ function disableButton(btnvalue) {
 var codebox = document.getElementById("codeentered"); // get textbox
 codebox.addEventListener("input", evaluateCode); // listen to code entered in textbox
 
-
+// run function if detected user had entered a character in textbox
+function evaluateCode() {
+  getCode = document.getElementById("codeentered").value; // get character entered
+  var charset1 = getCode.trim(); // remove any hidden characters entered
+  var charset2 = code.trim(); // remove any hidden characters generated
+  // test if code entered matches the number of generated characters
+  if (charset1.length == charset2.length && charset1 == charset2) {
+    disableButton(false); // if match, run the function to enable button
+  }
 }
 
 //create variable to hold the type of characters we want to show as codes
